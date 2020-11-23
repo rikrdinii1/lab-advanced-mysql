@@ -25,6 +25,7 @@ CREATE TABLE autores_mas_rentables
 SELECT au_id, SUM(sales_royalty) "profits" FROM world.regalias
 GROUP BY au_id
 ORDER BY profits desc
-LIMIT 3;
+limit 3 ;
 
-select * from most_profiting_authors
+select * from autores_mas_rentables
+LIMIT 3;
